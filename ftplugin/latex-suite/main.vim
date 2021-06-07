@@ -144,6 +144,17 @@ if !exists('s:doneMappings')
 	call IMAP(g:Tex_Leader.'X', '\Xi', 'tex')
 	call IMAP(g:Tex_Leader.'Y', '\Psi', 'tex')
 	call IMAP(g:Tex_Leader.'Z', '\Zeta', 'tex')
+	"Heber	
+	call IMAP(g:Tex_Leader.' ', '\;', 'tex')
+	call IMAP('||', '\left| <++> \right|<++>', 'tex')
+	call IMAP('.|', '\left. <++> \right|<++>', 'tex')
+	call IMAP(g:Tex_Leader.'o', '^{\circ}', 'tex')
+	call IMAP(g:Tex_Leader.'=', '\equiv', 'tex')
+	call IMAP(g:Tex_Leader.'.', '\cdot', 'tex')
+	call IMAP(g:Tex_Leader.'(', '\subset', 'tex')
+	call IMAP(g:Tex_Leader.')', '\subpset', 'tex')
+	call IMAP(g:Tex_Leader.'...', '\ldots', 'tex')
+	call IMAP(g:Tex_Leader.'···', '\cdots', 'tex')
 	" }}}
 	" ProtectLetters: sets up identity maps for things like ``a {{{
 	" " Description: If we simply do
