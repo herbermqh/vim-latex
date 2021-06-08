@@ -155,6 +155,7 @@ if !exists('s:doneMappings')
 	call IMAP(g:Tex_Leader.')', '\subpset', 'tex')
 	call IMAP(g:Tex_Leader.'...', '\ldots', 'tex')
 	call IMAP(g:Tex_Leader.'···', '\cdots', 'tex')
+	call IMAP('uu', '\unit{<++>}<++>', 'tex')
 	" }}}
 	" ProtectLetters: sets up identity maps for things like ``a {{{
 	" " Description: If we simply do
